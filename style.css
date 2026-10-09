@@ -950,3 +950,83 @@ h2 {
     transition: none;
   }
 }
+
+/* =========================================
+   INSTAGRAM - RYAN MONTADOR
+========================================= */
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: linear-gradient(
+    45deg,
+    #f77737 0%,
+    #e1306c 45%,
+    #c13584 70%,
+    #833ab4 100%
+  );
+
+  color: #ffffff;
+  border: 1px solid transparent;
+
+  box-shadow: 0 5px 18px rgba(225, 48, 108, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-instagram:hover {
+  color: #ffffff;
+  filter: brightness(1.12);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(225, 48, 108, 0.35);
+}
+
+/* INSTAGRAM NO RODAPÉ */
+
+.footer-location .footer-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.footer-location .footer-instagram:hover {
+  color: #ffbc16;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 540px) {
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-location .footer-instagram {
+    justify-content: flex-start;
+  }
+}
